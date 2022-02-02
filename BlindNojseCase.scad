@@ -1,5 +1,7 @@
 
-/// UROS featherS2 case
+/// Case for BlindNoise nano errorinstruments
+/// designed by dusjagr 2022
+/// public domain
 
 wallThickness = 1.6;
 height = 12;
@@ -8,8 +10,8 @@ length = 150;
 width = 80;
 
 difference() {
-rotate([180,0,0]) baseCase2();
-    #rotate([270,0,0])  translate([0,height/2-0.5,0]) roundedRect ([12,7,width*1],3);
+translate([0,0,height+wallThickness]) rotate([180,0,0]) baseCase2();
+    rotate([90,0,0])  translate([0,height/2+1,0]) roundedRect ([12,7,width*1],3);
     
     //#translate([0,60,height/2-0.5]) cube([10,20,6],true);
 
